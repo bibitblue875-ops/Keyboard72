@@ -32,13 +32,13 @@ jobs:
           echo "ANDROID_HOME=$HOME/android-sdk" >> $GITHUB_ENV
           echo "ANDROID_SDK_ROOT=$HOME/android-sdk" >> $GITHUB_ENV
 
-      - name: Give permission
-        run: chmod +x ./gradlew
-
-      - name: Build Release APK
+      - name: Fix permissions
         run: |
           chmod +x gradlew
-          ./gradlew assembleRelease --no-daemon
+          chmod +r gradle/wrapper/gradle-wrapper.jar
+
+      - name: Build Release APK
+        run: ./gradlew assembleRelease --no-daemon
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
