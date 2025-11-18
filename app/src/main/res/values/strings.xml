@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Keyboard72</string>
+    <string name="ime_name">Keyboard 72 (Sistem)</string>
+    <string name="settings_title">Keyboard72 Settings</string>
+    <string name="enable_instruction">Aktifkan Keyboard72 dari Pengaturan → Bahasa & Input → Keyboard Virtual → Kelola Keyboard.</string>
+    <string name="export_success">Mapping berhasil diekspor</string>
+    <string name="import_success">Mapping berhasil diimpor</string>
+</resources>
