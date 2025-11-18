@@ -37,9 +37,9 @@ jobs:
         run: |
           gradle wrapper || true
 
-- name: Build Release APK
-  working-directory: app
-  run: |
+      - name: Build Release APK
+        working-directory: app
+        run: |
     chmod +x gradlew
     ./gradlew assembleRelease --no-daemon
 
