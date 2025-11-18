@@ -32,10 +32,8 @@ jobs:
           echo "ANDROID_HOME=$HOME/android-sdk" >> $GITHUB_ENV
           echo "ANDROID_SDK_ROOT=$HOME/android-sdk" >> $GITHUB_ENV
 
-      - name: Prepare Gradle Wrapper
-        working-directory: app
-        run: |
-          gradle wrapper || true
+      - name: Give permission
+  run: chmod +x ./gradlew
 
       - name: Build Release APK
         run: |
