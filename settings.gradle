@@ -1,0 +1,2 @@
+rootProject.name = "Keyboard72"
+include ':app'
